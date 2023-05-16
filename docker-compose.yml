@@ -12,6 +12,7 @@ services:
 
   test-golang-migrate:
     build: ./migrate
+    container_name: test-golang-migrate
     command: up
     environment:
       WAIT_HOSTS: test-db:3306
